@@ -25,10 +25,11 @@
 <section class="secao-lancamento">
     <h2>Lançamentos</h2>
     <div class="jogos">
-        <a href=""><img src="assets/img/jogo1.png"></a>
-        <a href=""><img src="assets/img/jogo2.png"></a>
-        <a href=""><img src="assets/img/jogo3.png"></a>
-        <a href=""><img src="assets/img/jogo4.png"></a>
+      <div *ngFor="let produtos of listaProdutos" class="produtos">
+        <a href=""><img [src]=produtos.imagem></a>
+        <h3>{{produtos.nome}}</h3>
+        <p>{{produtos.preco}}</p>
+      </div>  
     </div>
 </section>
 

@@ -1,3 +1,6 @@
+.produtos p{
+    text-align: center;
+}
 
 #carrossel img{
     display: none;
